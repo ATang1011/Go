@@ -48,6 +48,8 @@ func main() {
 	AppendSlice()
 	UseMap()
 	ComputeUse()
+	Closures()
+	Fibonacci()
 }
 
 
