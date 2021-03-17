@@ -7,6 +7,11 @@ import (
 	"time"
 )
 
+type aha struct {
+	a string
+	h string
+}
+
 func Add(x, y int) int {
 	return x + y
 }
@@ -43,11 +48,6 @@ func TypePrint()  {
 		s string
 	)
 	fmt.Printf("%v %v %v %q\n", i, f, w, s)
-
-	type aha struct {
-		a string
-		h string
-	}
 
 	ahha := aha{"aa", "hh"}
 	fmt.Println(aha{"a", "ha"})

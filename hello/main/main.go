@@ -50,6 +50,7 @@ func main() {
 	ComputeUse()
 	Closures()
 	Fibonacci()
+	Method()
 }
 
 
