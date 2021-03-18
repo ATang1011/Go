@@ -37,9 +37,16 @@ func (hi aha) AbsAha() string {
 	return hi.a + " & " + hi.h
 }
 
+func (v *Vertex)scale(f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}
+
 func Method() {
 	v := Vertex{3, 4}
 	fmt.Println(v.Abs())
+	(&v).scale(10)
+	fmt.Println(v)
 
 	f := Myfloat(-math.Sqrt2)
 	fmt.Println(f.Absf())
